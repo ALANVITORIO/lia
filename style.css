@@ -1,0 +1,83 @@
+/* Aplicação das Fontes */
+.luxury-home-intro,
+.luxury-home-intro p,
+.luxury-home-intro a.btn {
+  font-family: 'Lato', sans-serif;
+}
+
+.luxury-home-intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; /* Mais impacto e leitura aprimorada para títulos */
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.luxury-home-intro {
+  position: relative;
+  color: white;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Sobreposição escura para melhorar o contraste */
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.destaque {
+  color: #efb810; /* Um amarelo mais claro */
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombreamento branco */
+}
