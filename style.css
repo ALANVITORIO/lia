@@ -1,25 +1,36 @@
-/* Aplicação das Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+body {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
 .luxury-home-intro,
 .luxury-home-intro p,
 .luxury-home-intro a.btn {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
 }
 
 .luxury-home-intro h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700; /* Mais impacto e leitura aprimorada para títulos */
-}
-
-h1 {
+  font-family: 'Work Sans', sans-serif; /* Atualizado para Work Sans */
+  font-weight: 400;
   font-size: 3.5rem;
-  line-height: 1.2;
+  line-height: 0.9;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
-p {
-  font-size: 1.25rem;
-  line-height: 1.5;
+.fundobranco h1 {
+  font-family: 'Work Sans', sans-serif; /* Atualizado para Work Sans */
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 0.9;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .luxury-home-intro {
@@ -44,7 +55,7 @@ p {
   z-index: 1;
 }
 
-.container {
+.container-video {
   position: relative;
   z-index: 2;
   height: 100%;
@@ -55,9 +66,9 @@ p {
 
 .btn-outline-light {
   color: #fff;
-  border-color: #fff;
-  padding: 10px 25px;
-  border-radius: 25px;
+  border-color: #a79247;
+  padding: 15px 35px;
+  border-radius: 10px;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -65,8 +76,8 @@ p {
 .btn-outline-light:hover,
 .btn-outline-light:focus {
   color: #000;
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #a79247;
+  border-color: #a79247;
 }
 .video-background {
   position: absolute;
@@ -78,6 +89,29 @@ p {
 }
 .destaque {
   color: #efb810; /* Um amarelo mais claro */
-  font-weight: bolder;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombreamento branco */
+}
+
+.galeria-imagens .container {
+  text-align: center;
+}
+
+.luxury-home-intro {
+  margin-bottom: 2rem;
+}
+
+.carrosel-container {
+  overflow-x: auto; /* Permite a rolagem horizontal se os itens ultrapassarem a largura do container */
+  white-space: nowrap; /* Impede que os itens do carrossel quebrem linha */
+}
+
+.carrosel-item {
+  display: inline-block; /* Exibe os itens lado a lado */
+  margin-right: 10px; /* Espaço entre os itens do carrossel */
+}
+
+.carrosel-item img {
+  max-width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 10px;
 }
